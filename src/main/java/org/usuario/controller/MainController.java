@@ -2,13 +2,17 @@ package org.usuario.controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 
 public class MainController {
     @FXML
-    private Label welcomeText;
-
+    private TextField txtnome;
     @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
+    private TextField txtpassword;
+    @FXML
+    private TextField btnSalvar;
+    @FXML
+   public void onBtnSalvarAction(){
+        System.out.println("Clique Salvar");
     }
 }
